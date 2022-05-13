@@ -8,15 +8,6 @@ body {
   align-items: center;
   height: 100%;
 }
-.link {
-  position: relative;
-}
-.info {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: aquamarine;
-}
 #sun {
   height: 24vmin;
   width: 24vmin;

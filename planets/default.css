@@ -1,9 +1,14 @@
+/* 
+pallete: 
+#011936 (oxford blue),
+#465362 (black coral),
+#82A3A1 (morning blue),
+#282B28 (charlseton green),
+#83BCA9 (green sheen)
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
-    height: 100vh;
 }
