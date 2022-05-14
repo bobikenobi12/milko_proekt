@@ -4,11 +4,14 @@ pallete:
 #465362 (black coral),
 #82A3A1 (morning blue),
 #282B28 (charlseton green),
-#83BCA9 (green sheen)
+#b8c6db (bg color)
 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #b8c6db;
 }

@@ -1,39 +1,39 @@
 const quizData = [
     {
-        question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "javascript",
-        correct: "d",
-    },
-    {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
-        correct: "b",
-    },
-    {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        question: "Коя е първата открита планета с помощта на телескоп?",
+        a: "Уран",
+        b: "Нептун",
+        c: "Меркурий",
+        d: "Марс",
         correct: "a",
     },
     {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
+        question: "С коя планета Уран има сходна структура и химичен състав?",
+        a: "Венера",
+        b: "Сатурн",
+        c: "Юпитер",
+        d: "Нептун",
+        correct: "d",
+    },
+    {
+        question: "Уран ли има най-студена планетарна атмосфера?",
+        a: "Да",
+        b: "Не",
+        correct: "a",
+    },
+    {
+        question: "Коя планета открива Уилям Хершел?",
+        a: "Марс",
+        b: "Уран",
+        c: "Венера",
+        d: "Меркурий",
         correct: "b",
     },
 ];
 
 const quiz= document.getElementById('quiz');
+const lis = document.getElementsByTagName("li");
+console.log(lis);
 const answerEls = document.querySelectorAll('.answer');
 const questionEl = document.getElementById('question');
 const a_text = document.getElementById('a_text');
@@ -54,14 +54,17 @@ function loadQuiz() {
     const currentQuizData = quizData[currentQuiz];
 
     questionEl.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
+    a_text.innerText = currentQuizData.a ? currentQuizData.a : lis[0].style.display="none";
+    b_text.innerText = currentQuizData.b ? currentQuizData.b : lis[1].style.display="none";
+    c_text.innerText = currentQuizData.c ? currentQuizData.c : lis[2].style.display="none";
+    d_text.innerText = currentQuizData.d ? currentQuizData.d : lis[3].style.display="none";
 }
 
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false);
+    for(let li of lis) {
+        li.style.display="block";
+    }
 }
 
 function getSelected() {
