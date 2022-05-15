@@ -22,15 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.footer-buttons-return {
-  background-color: #03cae4;
-  color: #fff;
-  padding: 12px 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  font-family: inherit;
-}
-.footer-buttons-quiz {
+.footer-button {
   font-family: inherit;
   background-color: #03cae4;
   color: #fff;

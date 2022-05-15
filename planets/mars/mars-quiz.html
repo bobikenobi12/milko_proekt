@@ -36,41 +36,45 @@
       </div>
       <button id="submit">Submit</button>
     </div>
-    <script src="../quiz/quiz.js"></script>
+    <div class="footer-buttons">
+      <a href="../../main.html" class="footer-button">Back to Main</a>
+      <a href="./mars.html" class="footer-button">Back to Mars</a>
+    </div>
+    <script src="../../quiz/quiz.js"></script>
     <script>
-        const quizData = [
-              {
-                question: "На колко години е Марс?",
-                a: "около 3.6 млрд",
-                b: "около 4,6 млрд",
-                c: "около 12 млн",
-                d: "около 400",
-                correct: "b",
-              },
-              {
-                question: "Човек е стъпвал на Марс?",
-                a: "Да",
-                b: "Не",
-                correct: "b",
-              },
-              {
-                question: "На коя планета повърхността е като система от каньони?",
-                a: "Марс",
-                b: "Уран",
-                c: "Нептун",
-                d: "Меркурий",
-                correct: "a",
-              },
-              {
-                question: "Колко пъти по - малка плътност има Марс от Земята?",
-                a: "4",
-                b: "50",
-                c: "66",
-                d: "100",
-                correct: "d",
-              },
-            ];
-            loadQuiz();
+      const quizData = [
+        {
+          question: "На колко години е Марс?",
+          a: "около 3.6 млрд",
+          b: "около 4,6 млрд",
+          c: "около 12 млн",
+          d: "около 400",
+          correct: "b",
+        },
+        {
+          question: "Човек е стъпвал на Марс?",
+          a: "Да",
+          b: "Не",
+          correct: "b",
+        },
+        {
+          question: "На коя планета повърхността е като система от каньони?",
+          a: "Марс",
+          b: "Уран",
+          c: "Нептун",
+          d: "Меркурий",
+          correct: "a",
+        },
+        {
+          question: "Колко пъти по - малка плътност има Марс от Земята?",
+          a: "4",
+          b: "50",
+          c: "66",
+          d: "100",
+          correct: "d",
+        },
+      ];
+      loadQuiz();
     </script>
   </body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./planets/default.css" />
+    <link rel="stylesheet" href="./planets/planet.css" />
+    <link rel="stylesheet" href="../quiz/quiz.css" />
+    <title>Main Quiz</title>
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question"></h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text"></label>
+            </li>
+  
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text"></label>
+            </li>
+  
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text"></label>
+            </li>
+  
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" />
+              <label for="d" id="d_text"></label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+      <script src="../quiz/quiz.js"></script>
+      <div class="footer-buttons">
+        <a href="../../main.html" class="footer-button">Back to Main</a>
+      </div>
+      <script>
+          const quizData = [
+                {
+                  question: "Коя е най-студената планетарна атмосфера в Слънчевата система?",
+                  a: "Уран",
+                  b: "Сатурн",
+                  c: "Юпитер",
+                  d: "Нептун",
+                  correct: "a",
+                },
+                {
+                  question:  "Кои са планетите, наречени 'ледени гиганти'?",
+                  a: "Нептун и Уран",
+                  b: "Юпитер и Сатурн",
+                  c: "Марс и Земята",
+                  d: "Венера и Меркурий",
+                  correct: "a",
+                },
+                {
+                  question: "Как се нарича най-голямата луна на Юпитер?",
+                  a: "Темисто",
+                  b: "Калихора",
+                  c: "Ганимед",
+                  d: "Архи",
+                  correct: "c",
+                },
+                {
+                  question: "Какво съдържа атмосферата на Венера?",
+                  a: "Въглероден диоксид и озон",
+                  b: "Въглероден диоксид и азот",
+                  c: "Озон и въглерод",
+                  d: "Урея и въглерод",
+                  correct: "b",
+                },
+                {
+                  question: "За кой тип планети е характерна магнитосферата?",
+                  a: "Средни планети",
+                  b: "Малки планети",
+                  c: "Планети нацепняци",
+                  d: "Планети гиганти",
+                  correct: "b",
+                },
+                {
+                  question: "От какво са съставени пръстените на Сатурн?",
+                  a: "Лед и космически прах",
+                  b: "Лед и натрий",
+                  c: "Водни пари",
+                  d: "Фосфор",
+                  correct: "a",
+                },
+                {
+                  question: "Приблизително колко тона водород преобразува Слънцето всяка година?",
+                  a: "71",
+                  b: "420",
+                  c: "5050",
+                  d: "620",
+                  correct: "d",
+                },
+                {
+                  question: "Кои са трите най-ярки обекта на нощното небе?",
+                  a: "Меркурий, Венера, Марс",
+                  b: "Юпитер, Меркурий, Венера",
+                  c: "Луната, Венера, Юпитер",
+                  d: "Луната, Венера, Меркурий",
+                  correct: "c",
+                },
+                {
+                  question: "Каква е причината за синия цвят на Уран и Нептун?",
+                  a: "Сярата в атмосверата",
+                  b: "Метанът в атмосферата",
+                  c: "Калция в атмосверата",
+                  d: "Водните пари в атмосверата",
+                  correct: "b",
+                },
+                {
+                  question: "Коя планета има 90 пъти по-високо налягане от това на земното морско равнище?",
+                  a: "Уран",
+                  b: "Нептун",
+                  c: "Юпитер",
+                  d: "Венера",
+                  correct: "d",
+                },
+              ];
+              loadQuiz();
+      </script>
+</body>
+</html>
