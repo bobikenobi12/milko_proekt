@@ -33,7 +33,6 @@ const quizData = [
 
 const quiz= document.getElementById('quiz');
 const lis = document.getElementsByTagName("li");
-console.log(lis);
 const answerEls = document.querySelectorAll('.answer');
 const questionEl = document.getElementById('question');
 const a_text = document.getElementById('a_text');
@@ -84,10 +83,8 @@ submitBtn.addEventListener('click', () => {
        if(answer === quizData[currentQuiz].correct) {
            score++;
        }
-
        currentQuiz++;
-
-       if(currentQuiz < quizData.length) {
+       if(currentQuiz<quizData.length) {
            loadQuiz();
        } else {
            quiz.innerHTML = `
