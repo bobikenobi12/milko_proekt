@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./default.css" />
     <link rel="stylesheet" href="./planet.css" />
+    <link rel="stylesheet" href="../quiz/quiz.css" />
     <title>Home</title>
   </head>
   <body>
@@ -50,5 +51,68 @@
         </p>
       </div>
     </div>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question"></h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text"></label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text"></label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text"></label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text"></label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+    <script src="../quiz/quiz.js"></script>
+    <script>
+        const quizData = [
+              {
+                question: "На всеки колко земни денонощия Меркурий прави една пълна обиколка около Слънцето?",
+                a: "3,14",
+                b: "3,17",
+                c: "87,7",
+                d: "69,19",
+                correct: "c",
+              },
+              {
+                question: "Колко звъртания около оста си прави Меркурий на всеки две завъртания около Слънцето?",
+                a: "1.5",
+                b: "2",
+                c: "2.5",
+                d: "3",
+                correct: "d",
+              },
+              {
+                question: "Меркурий може да бъде наблюдаван само за кратки периоди след изгрев?",
+                a: "Да",
+                b: "Не",
+                correct: "b",
+              },
+              {
+                question: "Коя планета е за първи път посещавана от апарата Маринър 10?",
+                a: "Марс",
+                b: "Уран",
+                c: "Венера",
+                d: "Меркурий",
+                correct: "d",
+              },
+            ];
+            loadQuiz();
+    </script>
   </body>
 </html>
