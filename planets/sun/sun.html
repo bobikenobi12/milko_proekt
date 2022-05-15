@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./default.css" />
-    <link rel="stylesheet" href="./planet.css" />
-    <link rel="stylesheet" href="../quiz/quiz.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="../planet.css" />
+    <link rel="stylesheet" href="../../quiz/quiz.css" />
+    <title>Слънце</title>
   </head>
   <body>
     <div class="container">
       <h1 class="container-title">Слънце</h1>
       <hr />
       <div class="container-info">
-        <img class="container-info--image" src="../images/sun.png" alt="" />
+        <img class="container-info--image" src="../../images/sun.png" alt="" />
         <p>
           Слънцето е звездата в центъра на Слънчевата система. То представлява
           почти идеална сфера, съставена от гореща плазма и магнитни полета.
@@ -46,66 +46,9 @@
         </p>
       </div>
     </div>
-    <div class="quiz-container" id="quiz">
-      <div class="quiz-header">
-        <h2 id="question"></h2>
-        <ul>
-          <li>
-            <input type="radio" name="answer" id="a" class="answer" />
-            <label for="a" id="a_text"></label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="b" class="answer" />
-            <label for="b" id="b_text"></label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="c" class="answer" />
-            <label for="c" id="c_text"></label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="d" class="answer" />
-            <label for="d" id="d_text"></label>
-          </li>
-        </ul>
-      </div>
-      <button id="submit">Submit</button>
+    <div class="footer-buttons">
+      <a href="../../main.html" class="footer-buttons-return">Back to Main</a>
+      <a href="./sun-quiz.html" class="footer-buttons-quiz">Take the Quiz about the Sun</a>
     </div>
-    <script src="../quiz/quiz.js"></script>
-    <script>
-      const quizData = [
-        {
-          question: "Слънцето е почти идеална сфера?",
-          a: "Да",
-          b: "Не",
-          correct: "a",
-        },
-        {
-          question: "Приблизително колко пъти по-голям е диаметърът на Слънцето от този на Земята",
-          a: "109",
-          b: "25",
-          c: "27",
-          d: "31",
-          correct: "a",
-        },
-        {
-          question: "3/4ти от масата на Слънцето е хелий?",
-          a: "Да",
-          b: "Не",
-          correct: "b",
-        },
-        {
-          question: "Около колко градуса е повърхностната температура на Слънцето?",
-          a: "7 315 °C",
-          b: "8 406 °C",
-          c: "10 515 °C",
-          d: "5 505 °C",
-          correct: "d",
-        },
-      ];
-      loadQuiz();
-    </script>
   </body>
 </html>

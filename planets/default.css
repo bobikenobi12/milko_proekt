@@ -7,11 +7,34 @@ pallete:
 #b8c6db (bg color)
 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    background-color: #b8c6db;
+  background-color: #b8c6db;
+}
+.footer-buttons {
+  display: flex;
+  width: 55%;
+  margin: 50px 0px 50px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-buttons-return {
+  background-color: #03cae4;
+  color: #fff;
+  padding: 12px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: inherit;
+}
+.footer-buttons-quiz {
+  font-family: inherit;
+  background-color: #03cae4;
+  color: #fff;
+  padding: 12px 10px;
+  text-decoration: none;
+  border-radius: 10px;
 }

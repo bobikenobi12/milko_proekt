@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../default.css" />
+    <link rel="stylesheet" href="../../quiz/quiz.css" />
+    <title>Venus Quiz</title>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question"></h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text"></label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text"></label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text"></label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text"></label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+    <script src="../quiz/quiz.js"></script>
+    <script>
+        const quizData = [
+              {
+                question: "Кой е най - яркият обект на нощното небе след Луната и Венера?",
+                a: "Уран",
+                b: "Нептун",
+                c: "Меркурий",
+                d: "Юпитер",
+                correct: "d",
+              },
+              {
+                question: "Коя планета има форма на сплеснат сфероид?",
+                a: "Венера",
+                b: "Сатурн",
+                c: "Юпитер",
+                d: "Нептун",
+                correct: "c",
+              },
+              {
+                question: "Юпитер има слаба магнитосфера?",
+                a: "Да",
+                b: "Не",
+                correct: "b",
+              },
+              {
+                question: "Колко луни има Юпитер?",
+                a: "66",
+                b: "79",
+                c: "70",
+                d: "33",
+                correct: "b",
+              },
+            ];
+            loadQuiz();
+    </script>
+  </body>
+</html>
