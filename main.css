@@ -1,12 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
-  height: 100vmin;
+  height: 97vmin;
   background-color: black;
+}
+.main-quiz--div {
+  text-align: center;
+  margin: 20px auto;
+}
+.main-quiz {
+  background-color: #03cae4;
+  color: #fff;
+  padding: 12px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.main-quiz:hover {
+  background-color: #04adc4;
 }
 .planets {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: 80%;
 }
 #sun {
   height: 24vmin;
