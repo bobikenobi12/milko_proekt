@@ -20,3 +20,16 @@ hr {
   width: 40%;
   height: 40%;
 }
+.main-page {
+  position: fixed;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #8e54ff;
+  bottom: 6%;
+  left: 3%;
+}
+.main-page img {
+  height: 6vh;
+  width: 6vh;
+}

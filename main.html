@@ -6,39 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./planets/navbar.css" />
+    <link rel="stylesheet" href="./planets/default.css" />
+    <link rel="stylesheet" href="./planets/action-button.css" />
   </head>
   <body>
-    <div class="main-quiz--div">
-    <a href="./main-quiz.html" class="main-quiz">Take the quiz</a>
+    <div class="navbar">
+      <a href="./planets/sun/sun.html">Слънце</a>
+      <a href="./planets/mercury/mercury.html">Меркурий</a>
+      <a href="./planets/venus/venus.html">Венера</a>
+      <a href="./planets/earth/earth.html">Земя</a>
+      <a href="./main-quiz.html" class="quiz"
+        >Провери знанията си за Слънчевата система</a
+      >
+      <a href="./planets/mars/mars.html">Марс</a>
+      <a href="./planets/jupiter/jupiter.html">Юпитер</a>
+      <a href="./planets/saturn/saturn.html">Сатурн</a>
+      <a href="./planets/uranus/uranus.html">Уран</a>
+      <a href="./planets/neptune/neptune.html">Нептун</a>
     </div>
     <div class="planets">
-      <a href="./planets/sun/sun.html" class="link" id="link-sun">
+      <a
+        href="./planets/sun/sun.html"
+        class="link"
+        id="link-sun"
+        data-planet="Слънце"
+      >
         <img src="./images/sun.png" class="planet" id="sun" alt="" />
       </a>
-      <a href="./planets/mercury/mercury.html" class="link" id="link-mercury">
+      <a
+        href="./planets/mercury/mercury.html"
+        class="link"
+        id="link-mercury"
+        data-planet="Меркурий"
+      >
         <img src="./images/mercury.png" class="planet" id="mercury" alt="" />
       </a>
-      <a href="./planets/venus/venus.html" class="link" id="link-venus">
+      <a
+        href="./planets/venus/venus.html"
+        class="link"
+        id="link-venus"
+        data-planet="Венера"
+      >
         <img src="./images/venus.png" class="planet" id="venus" alt="" />
       </a>
-      <a href="./planets/earth/earth.html" class="link" id="link-earth">
+      <a
+        href="./planets/earth/earth.html"
+        class="link"
+        id="link-earth"
+        data-planet="Земя"
+      >
         <img src="./images/earth.png" class="planet" id="earth" alt="" />
       </a>
-      <a href="./planets/mars/mars.html" class="link" id="link-mars">
+      <a
+        href="./planets/mars/mars.html"
+        class="link"
+        id="link-mars"
+        data-planet="Марс"
+      >
         <img src="./images/mars.png" class="planet" id="mars" alt="" />
       </a>
-      <a href="./planets/jupiter/jupiter.html" class="link" id="link-jupiter">
+      <a
+        href="./planets/jupiter/jupiter.html"
+        class="link"
+        id="link-jupiter"
+        data-planet="Юпитер"
+      >
         <img src="./images/jupiter.png" class="planet" id="jupiter" alt="" />
       </a>
-      <a href="./planets/saturn/saturn.html" class="link" id="link-saturn">
+      <a
+        href="./planets/saturn/saturn.html"
+        class="link"
+        id="link-saturn"
+        data-planet="Сатурн"
+      >
         <img src="./images/saturn.png" class="planet" id="saturn" alt="" />
       </a>
-      <a href="./planets/uranus/uranus.html" class="link" id="link-uranus">
+      <a
+        href="./planets/uranus/uranus.html"
+        class="link"
+        id="link-uranus"
+        data-planet="Уран"
+      >
         <img src="./images/uranus.png" class="planet" id="uranus" alt="" />
       </a>
-      <a href="./planets/neptune/neptune.html" class="link" id="link-neptune">
+      <a
+        href="./planets/neptune/neptune.html"
+        class="link"
+        id="link-neptune"
+        data-planet="Нептун"
+      >
         <img src="./images/neptune.png" class="planet" id="neptune" alt="" />
       </a>
     </div>
+    <div class="planet-info">
+      <h1 class="planet-info--name"></h1>
+      <p class="planet-info--desc"></p>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>

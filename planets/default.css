@@ -12,21 +12,3 @@ pallete:
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-  background-color: #b8c6db;
-}
-.footer-buttons {
-  display: flex;
-  width: 55%;
-  margin: 50px 0px 50px 30px;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer-button {
-  font-family: inherit;
-  background-color: #03cae4;
-  color: #fff;
-  padding: 12px 10px;
-  text-decoration: none;
-  border-radius: 10px;
-}

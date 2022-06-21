@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  background-color: #8e54ff;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+}

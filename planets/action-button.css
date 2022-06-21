@@ -1,0 +1,10 @@
+.quiz {
+  background-color: #03cae4;
+  color: #fff;
+  padding: 12px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.quiz:hover {
+  background-color: #04adc4;
+}

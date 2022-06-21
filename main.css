@@ -1,26 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 body {
   height: 97vmin;
   background-color: black;
-}
-.main-quiz--div {
-  text-align: center;
-  margin: 20px auto;
-}
-.main-quiz {
-  background-color: #03cae4;
-  color: #fff;
-  padding: 12px 10px;
-  text-decoration: none;
-  border-radius: 10px;
-}
-.main-quiz:hover {
-  background-color: #04adc4;
 }
 .planets {
   display: flex;
@@ -71,4 +51,20 @@ body {
 #neptune {
   height: 10vmin;
   width: 10vmin;
+}
+
+.planet-info {
+  display: none;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  right: 40%;
+  left: 40%;
+  bottom: 10%;
+  background-color: #8e54ff;
+  padding: 12px 8px;
+  border-radius: 10px;
+}
+.show {
+  display: block;
 }
