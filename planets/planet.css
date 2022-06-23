@@ -12,8 +12,9 @@ hr {
 .container-info {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
-  width: 60%;
+  width: 70%;
   margin: 0px auto;
 }
 .container-info--image {

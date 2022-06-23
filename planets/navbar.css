@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   display: flex;
-  gap: 50px;
+  gap: 40px;
   background-color: #8e54ff;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   text-shadow: 0 0 15px #8e54e9;
 }
